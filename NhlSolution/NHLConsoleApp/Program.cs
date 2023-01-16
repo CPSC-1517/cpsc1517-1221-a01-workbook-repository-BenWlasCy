@@ -2,12 +2,13 @@
 using NhlSystemClassLibrary;
 
 //Prompt and read in the team name
-Console.Write("Enter the team name: ");
-string teamName = Console.ReadLine();
+//Console.Write("Enter the team name: ");
+//string teamName = Console.ReadLine();
 try
 {
-    Team currentTeam = new Team(teamName);
-    Console.WriteLine($"Teamname: {currentTeam.Name}");
+    Team oilers = new Team("Oilers", "Edmonton", "Rogers", Conference.Western, Division.Pacific);
+    Console.WriteLine(oilers);
+
 }
 catch(ArgumentNullException ex)
 {
